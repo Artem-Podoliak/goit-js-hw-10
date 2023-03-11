@@ -50,10 +50,8 @@ function renderCountryList(data) {
     .map(item => {
       return `<li>
         <img class="country-list__flag" src="${item.flags.svg}" alt="${item.flags.alt}" width="60px">
-      </li>
-      <li>
         <p class="country-list__name">${item.name.official}</p>
-      </li>`;
+        </li>`;
     })
     .join();
   refs.countryListEl.innerHTML = listEl;
@@ -61,7 +59,7 @@ function renderCountryList(data) {
 
 function renderCountryInfo(data) {
     const infoEl = data.map(item => {
-        return `  <div>
+        return `  <div class="country-wraper">
         <img class="country-info__flag" src="${item.flags.svg}" alt="${item.flags.alt}" width="60px" >
         <p class="country-info__name">${item.name.official}</p>
       </div>
