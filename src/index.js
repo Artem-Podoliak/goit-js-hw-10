@@ -84,3 +84,4 @@ function clearRender() {
     refs.countryListEl.innerHTML = ''
     refs.countryInfoEl.innerHTML = ''
 }
+
